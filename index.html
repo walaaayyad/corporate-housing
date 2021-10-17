@@ -175,7 +175,7 @@
     <div class="container-fluid sliderformsection">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-9 col-xs-12 sliderformleft">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 sliderformleft mb-5">
                     <div class="slidercommon">
                         <div id="homeslider" class="carousel slide" data-ride="carousel">
 
@@ -211,12 +211,20 @@
                             <a class="carousel-control-prev" href="#homeslider" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#homeslider" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>                            </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-3 col-xs-12 sliderformright">
-                    <div class="sliderrightform-common">
+                
+            </div>
+        </div>
+    </div>
+    <!-- submission part -->
+    <div class="container-fluid bg-light m-3 p-5">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xs-12 sliderformright">
+                    <div class="sliderrightform-common shadow p-3 mb-5 bg-body rounded" style="background-color: #fff; width: 500px; padding: 8px;">
                         <script type="text/javascript">
                             let robot = true;
-
-
+        
+        
                             function chkFields(myForm) {
                                 var x = document.forms["myform"]["captcha"].value;
                                 if (myForm.requireddestination.value == "") {
@@ -274,7 +282,7 @@
                                     myForm.submitbutton.value = 'Sending...';
                                     return true;
                                 }
-
+        
                             }
                         </script>
                         <script src="https://www.google.com/recaptcha/api.js?render=6LfC4vUZAAAAAM6lULBajx8CW2I1Yq3_O3egYYAA"></script>
@@ -285,7 +293,7 @@
                                 }).then(function(token) {
                                     var recaptchaResponse = document.getElementById('recaptchaResponse');
                                     recaptchaResponse.value = token;
-
+        
                                     //Check Captcha
                                     $.ajax({
                                         url: '/check_captcha.php',
@@ -313,279 +321,279 @@
                                 }
                             };
                         </script>
-
+        
                         <!-- begin form-wrapp -->
                         <div id='form-wrapp'>
                             <!-- begin searchfields -->
                             <div id='searchfields'>
-
+        
                                 <form action="https://web.corporates.com/pch/leads/requestbluev2.php?ref = https://corporates.com/" method='post' name='myform' onsubmit="return chkFields(this)" class='homeform'>
                                     <div class='row'>
-                                        <div class='col-md-6 col-lg-6 col-xs-12 fname'>
+                                        <div class='col-md-8 col-lg-8 col-xs-12 fname'>
                                             <div class='form-group'>
-                                                <label for='requiredname'>Name:</label>
-                                                <input type='text' class='form-control' id='fname' placeholder='First name' name='requiredname'>
+                                                <!-- <label for='requiredname'>Name:</label> -->
+                                                <input type='text' class='form-control border-bottom m-2 p-3' id='fname' placeholder='First name' name='requiredname'>
                                             </div>
                                         </div>
-                                        <div class='col-md-6 col-lg-6 col-xs-12 lname'>
+                                        <div class='col-md-8 col-lg-8 col-xs-12 lname'>
                                             <div class='form-group'>
-                                                <label for='requiredname'>Last Name:</label>
-                                                <input type='text' class='form-control' id='lname' placeholder='Last Name' name='requiredlastname'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='row'>
-                                        <div class='col-md-6 col-lg-6 col-xs-12 femail'>
-                                            <div class='form-group'>
-                                                <label for='requiredemail'>Email:</label>
-                                                <input type='email' class='form-control' id='femail' placeholder='Email Address' name='requiredemail'>
-                                            </div>
-                                        </div>
-                                        <div class='col-md-6 col-lg-6 col-xs-12 fphone'>
-                                            <div class='form-group'>
-                                                <label for='requirednumber'>Phone:</label>
-                                                <input type='text' class='form-control' id='fphone' placeholder='Phone number' name='requirednumber'>
+                                                <!-- <label for='requiredname'>Last Name:</label> -->
+                                                <input type='text' class='form-control border-bottom m-2 p-3' id='lname' placeholder='Last Name' name='requiredlastname'>
                                             </div>
                                         </div>
                                     </div>
                                     <div class='row'>
-                                        <div class='col-sm-12 col-md-12 col-lg-12 col-xs-12 compnyname'>
+                                        <div class='col-md-8 col-lg-8 col-xs-12 femail'>
                                             <div class='form-group'>
-                                                <label for='Company'>Company Name or n/a:</label>
-                                                <input type='text' class='form-control' id='fcmpny' placeholder='Company name' name='Company'>
+                                                <!-- <label for='requiredemail'>Email:</label> -->
+                                                <input type='email' class='form-control border-bottom m-2 p-3' id='femail' placeholder='Email Address' name='requiredemail'>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-8 col-lg-8 col-xs-12 fphone'>
+                                            <div class='form-group'>
+                                                <!-- <label for='requirednumber'>Phone:</label> -->
+                                                <input type='text' class='form-control border-bottom m-2 p-3' id='fphone' placeholder='Phone number' name='requirednumber'>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class='row'>
+                                        <div class='col-sm-10 col-md-10 col-lg-8 col-xs-10 compnyname'>
+                                            <div class='form-group'>
+                                                <label for='Company' class="m-3">Company Name or n/a:</label>
+                                                <input type='text' class='form-control border-bottom ml-3 pb-3' id='fcmpny' placeholder='Company name' name='Company'>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class='row border m-3 p-2'>
                                         <div class='col-md-9 col-lg-9 col-xs-12 fdestination'>
                                             <div class='form-group'>
                                                 <label for='requireddestination'>Destination:</label>
-
+        
                                                 <input type='text' name='requireddestination' id='requireddestination' placeholder='Destination city' Value="" class='inputfield' required>
                                             </div>
                                         </div>
                                         <div class='col-md-3 col-lg-3 col-xs-12 fdestinationselect'>
                                             <div class='form-group'>
                                                 <label for='requireddeststate'>&nbsp;
-</label>
+            </label>
                                                 <select name='requireddeststate' size='1' class='inputfield' style='width: 50px;' required>
-<option value = ""></option>
-<option value = 'AK'>AK</option>
-<option value = 'AL'>AL</option>
-<option value = 'AR'>AR</option>
-<option value = 'AZ'>AZ</option>
-<option value = 'CA'>CA</option>
-<option value = 'CO'>CO</option>
-<option value = 'CT'>CT</option>
-<option value = 'DC'>DC</option>
-<option value = 'DE'>DE</option>
-<option value = 'FL'>FL</option>
-<option value = 'GA'>GA</option>
-<option value = 'HI'>HI</option>
-<option value = 'IA'>IA</option>
-<option value = 'ID'>ID</option>
-<option value = 'IL'>IL</option>
-<option value = 'IN'>IN</option>
-<option value = 'KS'>KS</option>
-<option value = 'KY'>KY</option>
-<option value = 'LA'>LA</option>
-<option value = 'MA'>MA</option>
-<option value = 'MD'>MD</option>
-<option value = 'ME'>ME</option>
-<option value = 'MI'>MI</option>
-<option value = 'MN'>MN</option>
-<option value = 'MO'>MO</option>
-<option value = 'MS'>MS</option>
-<option value = 'MT'>MT</option>
-<option value = 'NC'>NC</option>
-
-<option value = 'ND'>ND</option>
-<option value = 'NE'>NE</option>
-<option value = 'NH'>NH</option>
-<option value = 'NJ'>NJ</option>
-<option value = 'NM'>NM</option>
-<option value = 'NV'>NV</option>
-<option value = 'NY'>NY</option>
-<option value = 'OH'>OH</option>
-<option value = 'OK'>OK</option>
-<option value = 'OR'>OR</option>
-<option value = 'PA'>PA</option>
-<option value = 'PR'>PR</option>
-<option value = 'RI'>RI</option>
-<option value = 'SC'>SC</option>
-<option value = 'SD'>SD</option>
-<option value = 'TN'>TN</option>
-<option value = 'TX'>TX</option>
-<option value = 'UT'>UT</option>
-<option value = 'VA'>VA</option>
-<option value = 'VT'>VT</option>
-<option value = 'WA'>WA</option>
-<option value = 'WI'>WI</option>
-<option value = 'WV'>WV</option>
-<option value = 'WY'>WY</option>
-<option>-</option>
-<option value = 'AA'>AA</option>
-<option value = 'AE'>AE</option>
-<option value = 'AP'>AP </option>
-<option>-</option>
-<option value = 'AB'>AB</option>
-<option value = 'AE'>BC</option>
-<option value = 'MB'>MB</option>
-<option value = 'NB'>NB</option>
-<option value = 'NL'>NL</option>
-<option value = 'NS'>NS</option>
-<option value = 'NT'>NT</option>
-<option value = 'NU'>NU</option>
-<option value = 'ON'>ON</option>
-<option value = 'PE'>PE</option>
-<option value = 'QC'>QC</option>
-<option value = 'SK'>SK</option>
-<option value = 'YT'>YT </option>
-</select>
+            <option value = ""></option>
+            <option value = 'AK'>AK</option>
+            <option value = 'AL'>AL</option>
+            <option value = 'AR'>AR</option>
+            <option value = 'AZ'>AZ</option>
+            <option value = 'CA'>CA</option>
+            <option value = 'CO'>CO</option>
+            <option value = 'CT'>CT</option>
+            <option value = 'DC'>DC</option>
+            <option value = 'DE'>DE</option>
+            <option value = 'FL'>FL</option>
+            <option value = 'GA'>GA</option>
+            <option value = 'HI'>HI</option>
+            <option value = 'IA'>IA</option>
+            <option value = 'ID'>ID</option>
+            <option value = 'IL'>IL</option>
+            <option value = 'IN'>IN</option>
+            <option value = 'KS'>KS</option>
+            <option value = 'KY'>KY</option>
+            <option value = 'LA'>LA</option>
+            <option value = 'MA'>MA</option>
+            <option value = 'MD'>MD</option>
+            <option value = 'ME'>ME</option>
+            <option value = 'MI'>MI</option>
+            <option value = 'MN'>MN</option>
+            <option value = 'MO'>MO</option>
+            <option value = 'MS'>MS</option>
+            <option value = 'MT'>MT</option>
+            <option value = 'NC'>NC</option>
+        
+            <option value = 'ND'>ND</option>
+            <option value = 'NE'>NE</option>
+            <option value = 'NH'>NH</option>
+            <option value = 'NJ'>NJ</option>
+            <option value = 'NM'>NM</option>
+            <option value = 'NV'>NV</option>
+            <option value = 'NY'>NY</option>
+            <option value = 'OH'>OH</option>
+            <option value = 'OK'>OK</option>
+            <option value = 'OR'>OR</option>
+            <option value = 'PA'>PA</option>
+            <option value = 'PR'>PR</option>
+            <option value = 'RI'>RI</option>
+            <option value = 'SC'>SC</option>
+            <option value = 'SD'>SD</option>
+            <option value = 'TN'>TN</option>
+            <option value = 'TX'>TX</option>
+            <option value = 'UT'>UT</option>
+            <option value = 'VA'>VA</option>
+            <option value = 'VT'>VT</option>
+            <option value = 'WA'>WA</option>
+            <option value = 'WI'>WI</option>
+            <option value = 'WV'>WV</option>
+            <option value = 'WY'>WY</option>
+            <option>-</option>
+            <option value = 'AA'>AA</option>
+            <option value = 'AE'>AE</option>
+            <option value = 'AP'>AP </option>
+            <option>-</option>
+            <option value = 'AB'>AB</option>
+            <option value = 'AE'>BC</option>
+            <option value = 'MB'>MB</option>
+            <option value = 'NB'>NB</option>
+            <option value = 'NL'>NL</option>
+            <option value = 'NS'>NS</option>
+            <option value = 'NT'>NT</option>
+            <option value = 'NU'>NU</option>
+            <option value = 'ON'>ON</option>
+            <option value = 'PE'>PE</option>
+            <option value = 'QC'>QC</option>
+            <option value = 'SK'>SK</option>
+            <option value = 'YT'>YT </option>
+            </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='row'>
+                                    <div class='row border-bottom m-3 p-3'>
                                         <div class='col-sm-5 col-md-5 col-lg-5 col-xs-12 fmovemonth'>
                                             <div class='form-group'>
                                                 <label for='moveday'>Move-In Date:</label>
                                                 <select name='FirstSelectMonth' size='1' style='width:90px;' class='inputfield' onChange="ChangeOptionDays('FirstSelect')">
-<option value = '10'>Oct</option>
-<option value = '01'>Jan</option>
-<option value = '02'>Feb</option>
-<option value = '03'>Mar</option>
-<option value = '04'>Apr</option>
-<option value = '05'>May</option>
-<option value = '06'>Jun</option>
-<option value = '07'>Jul</option>
-<option value = '08'>Aug</option>
-<option value = '09'>Sep</option>
-<option value = '10'>Oct</option>
-<option value = '11'>Nov</option>
-<option value = '12'>Dec</option>
-</select>
+            <option value = '10'>Oct</option>
+            <option value = '01'>Jan</option>
+            <option value = '02'>Feb</option>
+            <option value = '03'>Mar</option>
+            <option value = '04'>Apr</option>
+            <option value = '05'>May</option>
+            <option value = '06'>Jun</option>
+            <option value = '07'>Jul</option>
+            <option value = '08'>Aug</option>
+            <option value = '09'>Sep</option>
+            <option value = '10'>Oct</option>
+            <option value = '11'>Nov</option>
+            <option value = '12'>Dec</option>
+            </select>
                                             </div>
                                         </div>
                                         <div class='col-sm-3 col-md-3 col-lg-3 col-xs-12 fmovedate'>
                                             <div class='form-group'>
                                                 <label for='movedate'>&nbsp;
-</label>
+            </label>
                                                 <select name='FirstSelectDay' size='1' class='inputfield' style='width:68px;'>
-<option value = '16'>16</option>
-<option value = '1'>1</option>
-<option value = '2'>2</option>
-<option value = '3'>3</option>
-<option value = '4'>4</option>
-<option value = '5'>5</option>
-<option value = '6'>6</option>
-<option value = '7'>7</option>
-<option value = '8'>8</option>
-<option value = '9'>9</option>
-<option value = '10'>10</option>
-<option value = '11'>11</option>
-<option value = '12'>12</option>
-<option value = '13'>13</option>
-<option value = '14'>14</option>
-<option value = '15'>15</option>
-<option value = '16'>16</option>
-<option value = '17'>17</option>
-<option value = '18'>18</option>
-<option value = '19'>19</option>
-<option value = '20'>20</option>
-<option value = '21'>21</option>
-<option value = '22'>22</option>
-<option value = '23'>23</option>
-<option value = '24'>24</option>
-<option value = '25'>25</option>
-<option value = '26'>26</option>
-<option value = '27'>27</option>
-<option value = '28'>28</option>
-<option value = '29'>29</option>
-<option value = '30'>30</option>
-<option value = '31'>31</option>
-</select>
+            <option value = '16'>16</option>
+            <option value = '1'>1</option>
+            <option value = '2'>2</option>
+            <option value = '3'>3</option>
+            <option value = '4'>4</option>
+            <option value = '5'>5</option>
+            <option value = '6'>6</option>
+            <option value = '7'>7</option>
+            <option value = '8'>8</option>
+            <option value = '9'>9</option>
+            <option value = '10'>10</option>
+            <option value = '11'>11</option>
+            <option value = '12'>12</option>
+            <option value = '13'>13</option>
+            <option value = '14'>14</option>
+            <option value = '15'>15</option>
+            <option value = '16'>16</option>
+            <option value = '17'>17</option>
+            <option value = '18'>18</option>
+            <option value = '19'>19</option>
+            <option value = '20'>20</option>
+            <option value = '21'>21</option>
+            <option value = '22'>22</option>
+            <option value = '23'>23</option>
+            <option value = '24'>24</option>
+            <option value = '25'>25</option>
+            <option value = '26'>26</option>
+            <option value = '27'>27</option>
+            <option value = '28'>28</option>
+            <option value = '29'>29</option>
+            <option value = '30'>30</option>
+            <option value = '31'>31</option>
+            </select>
                                             </div>
                                         </div>
-
+        
                                         <div class='col-sm-4 col-md-4 col-lg-4 col-xs-12 fmoveyear'>
                                             <div class='form-group'>
                                                 <label for='moveyear'>&nbsp;
-</label>
+            </label>
                                                 <select name='FirstSelectYear' size='1' class='inputfield' style='width:56px;'>
-<option value = '2021'>2021</option>
-<option value = '2022'>2022</option>
-</select>
+            <option value = '2021'>2021</option>
+            <option value = '2022'>2022</option>
+            </select>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class='row'>
+        
+                                    <div class='row border-bottom m-3 p-3'>
                                         <div class='col-md-6 col-lg-6 col-xs-12 fstlength'>
                                             <div class='form-group'>
                                                 <label for='length'>Stay Length:</label>
                                                 <select name='length' size='1' class='inputfield' style='width:105px;' required>
-<option value = '' selected = 'selected'>Choose </option>
-<option value = '< 1 month'>&#60;
-1 month</option>
-<option value = '1-2 months'>1-2 months</option>
-<option value = '3-5 months'>3-5 months</option>
-<option value = '6-11 months'>6-11 months</option>
-<option value = '1 year or longer'>1 year or longer</option>
-</select>
+            <option value = '' selected = 'selected'>Choose </option>
+            <option value = '< 1 month'>&#60;
+            1 month</option>
+            <option value = '1-2 months'>1-2 months</option>
+            <option value = '3-5 months'>3-5 months</option>
+            <option value = '6-11 months'>6-11 months</option>
+            <option value = '1 year or longer'>1 year or longer</option>
+            </select>
                                             </div>
                                         </div>
                                         <div class='col-md-6 col-lg-6 col-xs-12 petfriendly'>
                                             <div class='form-group'>
                                                 <label for='requiredpets'>Pet Friendly:</label>
                                                 <select name='requiredpets' size='1' class='inputfield' style='width: 105px;' required>
-<option value = '' selected = 'selected'>Choose </option>
-<option value = 'yes'>yes</option>
-<option value = 'no'>no</option>
-</select>
+            <option value = '' selected = 'selected'>Choose </option>
+            <option value = 'yes'>yes</option>
+            <option value = 'no'>no</option>
+            </select>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class='row'>
+        
+                                    <div class='row border-bottom m-3 p-3'>
                                         <div class='col-md-6 col-lg-6 col-xs-12 fstlength'>
                                             <div class='form-group'>
                                                 <label for='requiredsize'>Room Type:</label>
                                                 <select style='width: 105px;' name='requiredsize' size='1' class='inputfield' required>
-<option value = '' selected = 'selected'>Choose </option>
-<option value = '1 bed/1 bath'>1 bed/1 bath</option>
-<option value = '2 bed/1 bath'>2 bed/1 bath</option>
-<option value = '2 bed/2 bath'>2 bed/2 bath</option>
-<option value = '3 bed/2 bath'>3 bed/2 bath</option>
-</select>
+            <option value = '' selected = 'selected'>Choose </option>
+            <option value = '1 bed/1 bath'>1 bed/1 bath</option>
+            <option value = '2 bed/1 bath'>2 bed/1 bath</option>
+            <option value = '2 bed/2 bath'>2 bed/2 bath</option>
+            <option value = '3 bed/2 bath'>3 bed/2 bath</option>
+            </select>
                                             </div>
                                         </div>
                                         <div class='col-md-6 col-lg-6 col-xs-12 petfriendly'>
                                             <div class='form-group'>
                                                 <label for='requiredneeded'>Number of Apts:</label>
                                                 <select name='requiredneeded' size='1' style='width: 105px;' class='inputfield' required>
-<option value = '' selected = 'selected'>Choose</option>
-<option value = '1'>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>5-10</option>
-<option>10-15</option>
-<option>15-30</option>
-<option>30+ </option>
-</select>
+            <option value = '' selected = 'selected'>Choose</option>
+            <option value = '1'>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5-10</option>
+            <option>10-15</option>
+            <option>15-30</option>
+            <option>30+ </option>
+            </select>
                                             </div>
                                         </div>
                                     </div>
-
+        
                                     <div class='row'>
                                         <div class="col-md-12 fcaptcha text-center">
                                             <p>Solve: 7+4 =
                                                 <input type="text" name="captcha" placeholder="" size="10" style="width: 50px;" class="" required/></p>
                                         </div>
                                         <div class='col-md-12 fsubmit'>
-                                            <input name='submitbutton' disabled id='submit-btn-b' type='submit' class='button w-100 mt-0' value='Submit Request' style='top:0;'>
+                                            <input name='submitbutton' disabled id='submit-btn-b' type='submit' class='button w-50 mt-3 rounded' value='Submit Request' style='top:0;'>
                                             <input type='hidden' name='lat' value="" />
                                             <input type='hidden' name='lon' value="" />
                                             <input type='hidden' name='source' value="https://corporates.com/" />
@@ -593,18 +601,56 @@
                                             <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                         </div>
                                     </div>
-
+        
                                 </form>
-
+        
                             </div>
                             <!-- searchfield - END -->
                         </div>
                         <!-- form-wrapp - END -->
                     </div>
                 </div>
+                 <!-- test -->
+                 <div class="col-sm-12 col-md-12 col-lg-4 col-xs-12 d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 43px; margin-top: 5px; background-color: #0753a6; color: #fff;">
+                     <h1 class="border-bottom pb-3" style="color: #fff;">contact info</h1>
+                     <div class="mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                          </svg>
+                          <span>WWW.CORPORATES.COM</span>
+                     </div>
+                     <div class="mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                          <span>(800) 960-0102</span>
+                     </div>
+                     <div>
+                         <h2 class="border-bottom mt-5" style="color: #fff;">follow us</h2>
+                         <div class="d-flex justify-content-around mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>
+
+
+                         </div>
+                     </div>
+                     <div></div>
+                 </div>
+                 <!-- test -->
             </div>
         </div>
     </div>
+    <!-- end submission part -->
+
     <div class="container-fluid middlecorporatecontent">
         <div class="container">
             <div id="mainbanner" align="center">
@@ -633,13 +679,13 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid fourboxsection">
+    <div class="container-fluid fourboxsection bg-light mt-5">
         <div class="container">
             <div id="blocks">
                 <div class="row">
 
                     <!--nationwide-->
-                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox">
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
                         <div id="nationswide"> <a href="search.php"><img src="/include/images/map.png" alt=" Preferred Corporate Housing - Nation wide corporate housing search"></a>
                             <h2>Nationwide Solutions</h2>
                             <p>Since 1996, PCH has built a unique model for providing housing solutions in more than 75,000 locations across the US and Canada, specializing in remote destinations as well as major markets. Preferred Corporate Housing provides
@@ -649,7 +695,7 @@
                     <!--nationwide END-->
 
                     <!--solution-->
-                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox">
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
                         <div id="solution"> <a href="https://www.corporates.com/solutions.php"><img src="/include/images/solution.png" alt="Preferred Corporate Housing - Industry Corporate Housing"></a>
                             <h2>Industry Expertise</h2>
                             <p>Preferred Corporate Housing has 115+ years of combined furnished lodging experience on our team, gained from serving more than 8.1 million room nights across 75,000 destinations served to more than 8,000 clients across every
@@ -659,7 +705,7 @@
                     <!--solution END-->
 
                     <!--approach-->
-                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox">
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
                         <div id="approach"> <a href="https://www.corporates.com/preferred-approach.php"><img src="/include/images/hand.png" height="131" width="238" alt="Preferred Corproate Housing - Custom corporate housing"></a>
                             <h2>Preferred Approach</h2>
                             <p>Our focus is on our clients unique requirements and specifications of each stay. That's why PCH has abandoned the cookie-cutter corporate apartment model to offer custom-designed solutions that mirror the exact needs and personalities
@@ -669,7 +715,7 @@
                     <!--approach END-->
 
                     <!--included-->
-                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox">
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
                         <div id="included"> <a href="included.php"><img src="/include/images/included.png" alt="Preferred Corporate Housing - Fully furnished corporate housing"></a>
                             <h2>What's Included</h2>
                             <p>Our fully furnished apartments are equipped with everything you need to be comfortable and productive during your stay. All furnished housing amenities are set up and packaged into one convenient monthly bill. Let us handle
@@ -681,7 +727,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid newssection">
+    <div class="container-fluid newssection" style="background-color: #0753a6;">
         <div class="container">
             <!--newsblck-->
 
@@ -728,7 +774,7 @@
             <div class="newsbottomtext">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 newsbottom">
                     <div id="content">
-                        <p>Preferred Corporate Housing takes a unique approach to <i>corporate housing</i>. We create luxury corporate apartments in the exact area of town where you want to be. Our <i>furnished apartments</i> are larger and more comfortable
+                        <p style="color: #fff;">Preferred Corporate Housing takes a unique approach to <i>corporate housing</i>. We create luxury corporate apartments in the exact area of town where you want to be. Our <i>furnished apartments</i> are larger and more comfortable
                             than a typical hotel room. We can customize your apartments with the amenities you require such as king beds or twin beds in a second bedroom. Call one of our housing specialists today to discuss your temporary housing project
                             800-960-0102.</p>
                     </div>
