@@ -151,7 +151,7 @@
                         $('body').toggleClass("offcanvas-active");
                     });
 
-                    // close if press ESC button 
+                    // close if press ESC button
                     $(document).on('keydown', function(event) {
                         if (event.keyCode === 27) {
                             $(".navbar-collapse").removeClass("show");
@@ -159,7 +159,7 @@
                         }
                     });
 
-                    // close button 
+                    // close button
                     $(".btn-close").click(function(e) {
                         $(".navbar-collapse").removeClass("show");
                         $("body").removeClass("offcanvas-active");
@@ -211,7 +211,7 @@
                             <a class="carousel-control-prev" href="#homeslider" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#homeslider" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>                            </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -223,8 +223,8 @@
                     <div class="sliderrightform-common shadow p-3 mb-5 bg-body rounded" style="background-color: #fff; width: 500px; padding: 8px;">
                         <script type="text/javascript">
                             let robot = true;
-        
-        
+
+
                             function chkFields(myForm) {
                                 var x = document.forms["myform"]["captcha"].value;
                                 if (myForm.requireddestination.value == "") {
@@ -282,7 +282,7 @@
                                     myForm.submitbutton.value = 'Sending...';
                                     return true;
                                 }
-        
+
                             }
                         </script>
                         <script src="https://www.google.com/recaptcha/api.js?render=6LfC4vUZAAAAAM6lULBajx8CW2I1Yq3_O3egYYAA"></script>
@@ -293,7 +293,7 @@
                                 }).then(function(token) {
                                     var recaptchaResponse = document.getElementById('recaptchaResponse');
                                     recaptchaResponse.value = token;
-        
+
                                     //Check Captcha
                                     $.ajax({
                                         url: '/check_captcha.php',
@@ -321,12 +321,12 @@
                                 }
                             };
                         </script>
-        
+
                         <!-- begin form-wrapp -->
                         <div id='form-wrapp'>
                             <!-- begin searchfields -->
                             <div id='searchfields'>
-        
+
                                 <form action="https://web.corporates.com/pch/leads/requestbluev2.php?ref = https://corporates.com/" method='post' name='myform' onsubmit="return chkFields(this)" class='homeform'>
                                     <div class='row'>
                                         <div class='col-md-8 col-lg-8 col-xs-12 fname'>
@@ -364,12 +364,12 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class='row border m-3 p-2'>
                                         <div class='col-md-9 col-lg-9 col-xs-12 fdestination'>
                                             <div class='form-group'>
                                                 <label for='requireddestination'>Destination:</label>
-        
+
                                                 <input type='text' name='requireddestination' id='requireddestination' placeholder='Destination city' Value="" class='inputfield' required>
                                             </div>
                                         </div>
@@ -407,7 +407,7 @@
             <option value = 'MS'>MS</option>
             <option value = 'MT'>MT</option>
             <option value = 'NC'>NC</option>
-        
+
             <option value = 'ND'>ND</option>
             <option value = 'NE'>NE</option>
             <option value = 'NH'>NH</option>
@@ -515,7 +515,7 @@
             </select>
                                             </div>
                                         </div>
-        
+
                                         <div class='col-sm-4 col-md-4 col-lg-4 col-xs-12 fmoveyear'>
                                             <div class='form-group'>
                                                 <label for='moveyear'>&nbsp;
@@ -527,7 +527,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class='row border-bottom m-3 p-3'>
                                         <div class='col-md-6 col-lg-6 col-xs-12 fstlength'>
                                             <div class='form-group'>
@@ -554,7 +554,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class='row border-bottom m-3 p-3'>
                                         <div class='col-md-6 col-lg-6 col-xs-12 fstlength'>
                                             <div class='form-group'>
@@ -586,7 +586,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                     <div class='row'>
                                         <div class="col-md-12 fcaptcha text-center">
                                             <p>Solve: 7+4 =
@@ -601,9 +601,9 @@
                                             <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                         </div>
                                     </div>
-        
+
                                 </form>
-        
+
                             </div>
                             <!-- searchfield - END -->
                         </div>
@@ -654,8 +654,8 @@
     <div class="container-fluid middlecorporatecontent">
         <div class="container">
             <div id="mainbanner" align="center">
-                <h1>CORPORATE APARTMENTS IN OVER 75,000 CITIES</h1>
-                <h3>We create local furnished short term housing solutions</h3>
+                <h1 class="mt-5 pb-3" style="border-bottom: 1px solid #0753a6; max-width: 70%; margin: auto;">CORPORATE APARTMENTS IN OVER 75,000 CITIES</h1>
+                <h3 class="mt-4">We create local furnished short term housing solutions</h3>
             </div>
         </div>
     </div>
@@ -666,9 +666,9 @@
                     <p>BREAKING NEWS 02/26/21: We are proud to announce, Preferred Corporate Housing has won the CHPA Company of the Year 2021 for the second year in a row!We were are also awarded Innovator of the Year at the CHPA Annual Conference</p>
                 </div>
             </div>
-            <div class="row covideleftrightrow">
+            <div class="row covideleftrightrow" style="display: contents;">
                 <div class="covidleft">
-                    <div class="covideleftimg"><img src="include/images/award2020.jpg" class="pop-out" style="width:60px;height:150px"></div>
+                    <div class="covideleftimg"><img src="include/images/award2020.jpg" class="pop-out" style="width:60px;height:150px;"></div>
                 </div>
                 <div class="covidright">
                     <div class="coviderightcontent">
@@ -679,14 +679,16 @@
             </div>
         </div>
     </div>
+    <!-- start about us section -->
     <div class="container-fluid fourboxsection bg-light mt-5">
         <div class="container">
+            <h1 class="text-center mb-5 pb-3"  style="border-bottom: 1px solid #0753a5; margin: auto; max-width: 50%;">about us</h1>
             <div id="blocks">
                 <div class="row">
 
                     <!--nationwide-->
                     <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
-                        <div id="nationswide"> <a href="search.php"><img src="/include/images/map.png" alt=" Preferred Corporate Housing - Nation wide corporate housing search"></a>
+                        <div id="nationswide"> <a href="search.php"><img src="/include/images/map.png" class='img-fluid' style="width: 100%; height: 160px;" alt=" Preferred Corporate Housing - Nation wide corporate housing search"></a>
                             <h2>Nationwide Solutions</h2>
                             <p>Since 1996, PCH has built a unique model for providing housing solutions in more than 75,000 locations across the US and Canada, specializing in remote destinations as well as major markets. Preferred Corporate Housing provides
                                 furnished lodging solutions exactly where our clients request for half the cost of hotel stays. <a href="search.php">Read More</a></p>
@@ -696,7 +698,7 @@
 
                     <!--solution-->
                     <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
-                        <div id="solution"> <a href="https://www.corporates.com/solutions.php"><img src="/include/images/solution.png" alt="Preferred Corporate Housing - Industry Corporate Housing"></a>
+                        <div id="solution"> <a href="https://www.corporates.com/solutions.php"><img src="/include/images/solution.png" class='img-fluid' style="width: 100%; height: 160px;" alt="Preferred Corporate Housing - Industry Corporate Housing"></a>
                             <h2>Industry Expertise</h2>
                             <p>Preferred Corporate Housing has 115+ years of combined furnished lodging experience on our team, gained from serving more than 8.1 million room nights across 75,000 destinations served to more than 8,000 clients across every
                                 industry. <a href="solutions.php">Read More</a></p>
@@ -706,7 +708,7 @@
 
                     <!--approach-->
                     <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
-                        <div id="approach"> <a href="https://www.corporates.com/preferred-approach.php"><img src="/include/images/hand.png" height="131" width="238" alt="Preferred Corproate Housing - Custom corporate housing"></a>
+                        <div id="approach"> <a href="https://www.corporates.com/preferred-approach.php"><img src="/include/images/hand.png" class='img-fluid' style="width: 100%; height: 160px;" alt="Preferred Corproate Housing - Custom corporate housing"></a>
                             <h2>Preferred Approach</h2>
                             <p>Our focus is on our clients unique requirements and specifications of each stay. That's why PCH has abandoned the cookie-cutter corporate apartment model to offer custom-designed solutions that mirror the exact needs and personalities
                                 of our guests. By providing a wide range of choices to suit your needs, we can accommodate any group, project and budget level. <a href="preferred-approach.php">Read More</a></p>
@@ -716,7 +718,7 @@
 
                     <!--included-->
                     <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 fbox d-flex justify-content-center align-items-center p-3 shadow p-3 mb-5 bg-body rounded border">
-                        <div id="included"> <a href="included.php"><img src="/include/images/included.png" alt="Preferred Corporate Housing - Fully furnished corporate housing"></a>
+                        <div id="included"> <a href="included.php"><img src="/include/images/included.png" class='img-fluid' style="width: 100%; height: 160px;" alt="Preferred Corporate Housing - Fully furnished corporate housing"></a>
                             <h2>What's Included</h2>
                             <p>Our fully furnished apartments are equipped with everything you need to be comfortable and productive during your stay. All furnished housing amenities are set up and packaged into one convenient monthly bill. Let us handle
                                 the details so you can focus on your other priorities. <a href="included.php">Read More</a></p>
@@ -727,51 +729,17 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid newssection" style="background-color: #0753a6;">
+    <!-- end about us section -->
+
+    <!-- start news section -->
+    <div class="container-fluid newssection" style="background-color: #0753a6; height: inherit;">
         <div class="container">
             <!--newsblck-->
 
-            <div class="newsdesktop">
-                <div id="newsblck" style="background: url(include/images/news-backg.png) no-repeat;">
-                    <!--newsblck END-->
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nleft"> </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nright">
-                            <!--news-->
-                            <div id="news">
-                                <h4><a href="awards.php">CHPA Corporate Housing Company of the Year 2020</a></h4>
-                                <p>February 2020</p>
-                                <h4><a href="awards.php">PCH Earns - First Ever - Company Accreditation from CHPA</a></h4>
-                                <p>September 2016</p>
-                                <h4><a href="awards.php">Additional PCH Awards... </a></h4>
-                            </div>
-                            <!--news END-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="newsmobile">
-                <div id="newsblck">
-                    <!--newsblck END-->
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nleft"> <img src="include/images/news-backg.png" alt="" /> </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nright">
-                            <!--news-->
-                            <div id="news">
-                                <h4><a href="awards.php">CHPA Corporate Housing Company of the Year 2020</a></h4>
-                                <p>February 2020</p>
-                                <h4><a href="awards.php">PCH Earns - First Ever - Company Accreditation from CHPA</a></h4>
-                                <p>September 2016</p>
-                                <h4><a href="awards.php">Additional PCH Awards... </a></h4>
-                            </div>
-                            <!--news END-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div class="newsdesktop d-block">
+                <h1 class="text-center mt-5 pb-3 border-bottom" style="color: #fff; margin: auto; max-width: 50%;">latest news</h1>
             <!--blocks END-->
-            <div class="newsbottomtext">
+            <div class="newsbottomtext text-center">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 newsbottom">
                     <div id="content">
                         <p style="color: #fff;">Preferred Corporate Housing takes a unique approach to <i>corporate housing</i>. We create luxury corporate apartments in the exact area of town where you want to be. Our <i>furnished apartments</i> are larger and more comfortable
@@ -781,93 +749,107 @@
                 </div>
             </div>
 
-            <!-- start new part -->
-            <div class="container-fluid m-5 p-5" style="background-color: #fff;">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col">
-                        <h1>we design delightful didital experiences</h1>
-                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, asperiores consectetur cum, perferendis, non alias excepturi rerum quibusdam optio commodi quia.</p>
-                    </div>
-                    <div class="col">
-                        <img src="./images/bbb-logo.png" style="width: 30%; height: 50px; margin: 5px;" alt="">
-                        <img src="./images/erd-logo.jpeg" style="width: 30%; height: 50px; margin: 5px;" alt="">
-                        <img src="./images/gbta-logo.png" style="width: 30%; height: 50px; margin: 5px;" alt="">
-                        <img src="./images/gsa-logo.png" style="width: 30%; height: 50px; margin: 5px;" alt="">
-                        <img src="./images/images.png" style="width: 30%; height: 50px; margin: 5px;" alt="">
-                        <img src="./images/wbenc-logo.png" style="width: 30%; height: 50px; margin: 5px;" alt="">
+                <div id="newsblck" class="mb-3" style="background: url(include/images/news-backg.png) no-repeat; background-size: cover; background-color: #122756c3; background-blend-mode: darken;">
+                    <!--newsblck END-->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nleft"> </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 nright">
+                            <!--news-->
+                            <div id="news" class="m-3">
+                                <h4><a style="color: #fff;" href="awards.php">CHPA Corporate Housing Company of the Year 2020</a></h4>
+                                <p>February 2020</p>
+                                <h4><a style="color: #fff;" href="awards.php">PCH Earns - First Ever - Company Accreditation from CHPA</a></h4>
+                                <p>September 2016</p>
+                                <h4><a style="color: #fff;" href="awards.php">Additional PCH Awards... </a></h4>
+                            </div>
+                            <!--news END-->
+                        </div>
                     </div>
                 </div>
             </div>
-          <!-- end new part -->
+            <!-- <div class="newsmobile"> on test.html -->
+
         </div>
     </div>
+    <!-- end news section -->
+
+    <!-- start our clients section -->
+    <div class="container-fluid" style="background-color: #fff">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+
+                <h1 class="mt-5 pb-3" style="border-bottom: 1px solid #0753a6;">our clients</h1>
+                <p class="m-3 text-center" style="max-width: 50%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, asperiores consectetur cum, perferendis, non alias excepturi rerum quibusdam optio commodi quia.</p>
+
+            <div class="mb-5 text-center">
+                <img src="./images/bbb-logo.png" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+                <img src="./images/erd-logo.jpeg" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+                <img src="./images/gbta-logo.png" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+                <img src="./images/gsa-logo.png" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+                <img src="./images/images.png" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+                <img src="./images/wbenc-logo.png" style="width: 30%; height: 50px; margin: 3px auto;" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end our clients section -->
+
     <footer>
-        <!-- <div class="container-fluid footerlogo">
-            <div class="footerlogoimg"> <img src="https://www.corporates.com/include/images/footerlogo.jpg" /> </div>
-        </div> -->
-        <div class="container-fluid middlefooter">
-            <div class="container">
-                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 midfooter">
-                    <div class="row">
-                        <div class="col-sm-5 col-xs-12 col-md-5 col-lg-5 midfooterdescripton">
-                            <div class="midfooterleft">
-                                <div class="row">
-                                    <ul>
-                                        <li class="followtitle">
-                                            <h5>Follow us</h5>
-                                        </li>
-                                        <li class="ftwitter"><a href="https://www.twitter.com/PreferredCorp" target="_blank"><img src="/include/images/twitter-icon.png"></a></li>
-                                        <li class="flinkden"><a href="https://www.linkedin.com/company/preferred-corporate-housing" target="_blank"><img src="/include/images/linkedin-icon.png"></a></li>
-                                        <li class="fgplus"><a href="https://plus.google.com/116665794086495342928" rel="publisher"><img src="/include/images/google+icon.png"></a></li>
-                                        <li class="facobooks"><a href="https://www.facebook.com/PreferredCorporateHousing" target="_blank"><img src="/include/images/fb-icon.png"></a></li>
-                                        <li class="fbshare">
-                                            <iframe name="f21b0c6b2ca8c" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 86px; height: 20px;"
-                                                src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f87b5504637a8%26domain%3Dwww.corporates.com%26origin%3Dhttps%253A%252F%252Fwww.corporates.com%252Ff1c496569b0e1c2%26relation%3Dparent.parent&amp;container_width=153&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpreferredcorporatehousing&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"
-                                                class="" width="1000px" height="1000px" frameborder="0"></iframe>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col-xs-12 col-md-7 col-lg-7 midfooterdescripton">
-                            <div class="midfooterright">
-                                <div class="row">
-                                    <ul>
-                                        <li class="translatetitle">
-                                            <h5>Translate this page</h5>
-                                        </li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cde&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/german.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Ces&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/spain.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cfr&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/france.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cit&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/italy.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cpt&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/portuguese.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Car&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/saudi.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cja&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/japan.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cko&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/korea.gif"></a></li>
-                                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Czh-CN&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/china.gif"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+  
+        <div class="container-fluid bottomfooterimage d-flex flex-column justify-content-center align-items-center pt-3" style="background-image: none; background-color: #132656; height: inherit;">
+            
+            <div class="row">
+                <div class="col-lg botfotimg p-5 d-flex flex-column justify-content-center align-items-center">
+                    <ul class="pb-3 d-flex flex-column justify-content-center align-items-start">
+                        <li><a class="text-decoration-none" href="../job/" title="Now Hiring">Career Opportunities</a> | </li>
+                        <li><a class="text-decoration-none" href="../tracking.php">Track Request</a> | </li>
+                        <li><a class="text-decoration-none" href="../referral/index.php">Affilitates</a> | </li>
+                        <li><a class="text-decoration-none" href="../blog/index.php">Blog</a> | </li>
+                        <li><a class="text-decoration-none" href="../media.php">Social Media</a> | </li>
+                        <li><a class="text-decoration-none" href="../sitemap.php">Site Map</a> | </li>
+                        <li><a class="text-decoration-none" href="../legal.php">Legal</a> | </li>
+                        <li><a class="text-decoration-none" href="../../email/emailForm.php?dep=leasing">Email Us</a> | </li>
+                    </ul>
+                </div>
+
+                <!-- follow us section -->
+                <div class="col-lg">
+                    <div class="row d-flex flex-column justify-content-center align-items-center m-3">
+                        <a href=""><img src="./include/images/mobilelogo-img.png" style="width: 100px; margin: 10px;" alt=""></a>
+                        <h5 class="m-2" style="color: #fff;">Follow us</h5>
+                        <ul class="d-flex justify-content-center align-items-center">
+                            <li class="ftwitter m-1"><a href="https://www.twitter.com/PreferredCorp" target="_blank"><img src="/include/images/twitter-icon.png" class="rounded-circle"></a></li>
+                            <li class="flinkden m-1"><a href="https://www.linkedin.com/company/preferred-corporate-housing" target="_blank"><img src="/include/images/linkedin-icon.png" class="rounded-circle"></a></li>
+                            <li class="fgplus m-1"><a href="https://plus.google.com/116665794086495342928" rel="publisher"><img src="/include/images/google+icon.png" class="rounded-circle"></a></li>
+                            <li class="facobooks m-1"><a href="https://www.facebook.com/PreferredCorporateHousing" target="_blank"><img src="/include/images/fb-icon.png" class="rounded-circle"></a></li>
+                            <li class="fbshare m-1">
+                                <iframe name="f21b0c6b2ca8c" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 86px; height: 20px;"
+                                    src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2f87b5504637a8%26domain%3Dwww.corporates.com%26origin%3Dhttps%253A%252F%252Fwww.corporates.com%252Ff1c496569b0e1c2%26relation%3Dparent.parent&amp;container_width=153&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpreferredcorporatehousing&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"
+                                    class="" width="1000px" height="1000px" frameborder="0"></iframe>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- translate section -->
+                <div class="col-lg">
+                <div class="row d-flex flex-column justify-content-center align-items-center m-3">
+                    <h5 class="m-2" style="color: #fff;">Translate this page</h5>
+                    <ul class="d-flex justify-content-center align-items-center">
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cde&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/german.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Ces&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/spain.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cfr&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/france.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cit&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/italy.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cpt&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/portuguese.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Car&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/saudi.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cja&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/japan.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Cko&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/korea.gif"></a></li>
+                        <li><a href="https://translate.google.com/translate?u=https://www.corporates.com:443/national/index.php&amp;langpair=en%7Czh-CN&amp;hl=en&amp;safe=off&amp;ie=UTF-8&amp;oe=UTF-8&amp;prev=%2Flanguage_tools"><img src="/include/images/china.gif"></a></li>
+                    </ul>
+                </div>
+                </div>
             </div>
+            <p class="text-center border-top m-3 pt-2" style="color: #fff; width: 50%;">© Copyright 1996-2021</p>
         </div>
-        <div class="container-fluid bottomfooterimage">
-            <div class="botfotimg">
-                <ul>
-                    <li><a href="../job/" title="Now Hiring">Career Opportunities</a> | </li>
-                    <li><a href="../tracking.php">Track Request</a> | </li>
-                    <li><a href="../referral/index.php">Affilitates</a> | </li>
-                    <li><a href="../blog/index.php">Blog</a> | </li>
-                    <li><a href="../media.php">Social Media</a> | </li>
-                    <li><a href="../sitemap.php">Site Map</a> | </li>
-                    <li> <a href="../legal.php">Legal</a> | </li>
-                    <li><a href="../../email/emailForm.php?dep=leasing">Email Us</a> | </li>
-                    <li>© Copyright 1996-2021</li>
-                </ul>
-            </div>
-        </div>
+      
         <!-- BEGIN PHP Live! HTML Code -->
         <span style="color: #0000FF; text-decoration: underline; line-height: 0px !important; cursor: pointer; position: fixed; bottom: 0px; left: 15px; z-index: 20000000;" id="phplive_btn_1524769221" onclick="phplive_launch_chat_0()"></span>
         <script data-cfasync="false" type="text/javascript">
@@ -891,3 +873,5 @@
             } catch (err) {}
         </script>
     </footer>
+</body>
+</html>
